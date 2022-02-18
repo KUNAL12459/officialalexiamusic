@@ -11,13 +11,12 @@ wget
 python-dotenv
 youtube-search-python
 youtube-search
-speedtest-cli
 motor
 psutil
 requests
 rich
 dnspython
-yt-dlp==2021.11.10.1
+git+https://github.com/KUNAL12459/ALE@master
 tgcrypto
 gitpython
 heroku3
