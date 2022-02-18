@@ -41,14 +41,14 @@ async def bot_sys_stats():
     return stats
 
 
-@app.on_message(filters.command("stats") & ~filters.edited)
+@app.on_message(filters.command("vcstats") & ~filters.edited)
 async def gstats(_, message):
     start = datetime.now()
     try:
         await message.delete()
     except:
         pass
-    uptime = await bot_sys_stats()
+    uptime = await bot_sys_vcstats()
     response = await message.reply_photo(
         photo="Utils/Query.jpg", caption="Getting Stats!"
     )
@@ -71,7 +71,7 @@ Ping: `⚡{resp} ms`
 )
 async def stats_markup(_, CallbackQuery):
     command = CallbackQuery.matches[0].group(1)
-    if command == "sys_stats":
+    if command == "sys_vcstats":
         await CallbackQuery.answer("Getting System Stats...", show_alert=True)
         sc = platform.system()
         arch = platform.machine()
