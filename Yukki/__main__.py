@@ -457,7 +457,7 @@ All commands can be used with: /
                         text="↪️ Back", callback_data="alexia_back"
                     ),
                     InlineKeyboardButton(
-                        text="🔄 Close", callback_data="alexia_back"
+                        text="🔄 Close", callback_data="emiko_back"
                     ),
                 ],
             ]
