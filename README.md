@@ -9,6 +9,6 @@
 
 ## 𝗠𝗘 𝗙𝗜𝗡𝗗 𝗢𝗡 𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 :- [Alexia❤️](https://t.me/Alexia_Robot)
 
-Railway
 
-[![Deploy+on+Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/KUNAL12459/officialalexiamusic&envs=API_HASH,OWNER_ID,API_ID,ASSISTANT_PREFIX,BOT_TOKEN,DURATION_LIMIT,SUPPORT_GROUP,SUPPORT_CHANNEL,STRING_SESSION1,START_IMG_URL,LOG_GROUP_ID,MUSIC_BOT_NAME,MONGO_DB_URI,LOG_SESSION,SUDO_USERS)
+
+
