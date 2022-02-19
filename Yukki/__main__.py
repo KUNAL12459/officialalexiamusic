@@ -249,7 +249,7 @@ All commands can be used with: / """
 
 
 @app.on_message(filters.command("vchelp") & filters.private)
-async def help_command(_, message):
+async def vchelp_command(_, message):
     text, keyboard = await alexia_parser(message.from_user.mention)
     await app.send_message(message.chat.id, text, reply_markup=keyboard)
 
@@ -390,7 +390,7 @@ async def vcstart_command(_, message):
 
 async def alexia_parser(name, keyboard=None):
     if not keyboard:
-        keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
+        keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "alexia"))
     return (
         """Hello {first_name},
 
@@ -481,7 +481,7 @@ All commands can be used with: /
         await query.message.edit(
             text=top_text,
             reply_markup=InlineKeyboardMarkup(
-                paginate_modules(curr_page - 1, HELPABLE, "help")
+                paginate_modules(curr_page - 1, HELPABLE, "alexia")
             ),
             disable_web_page_preview=True,
         )
@@ -491,7 +491,7 @@ All commands can be used with: /
         await query.message.edit(
             text=top_text,
             reply_markup=InlineKeyboardMarkup(
-                paginate_modules(next_page + 1, HELPABLE, "help")
+                paginate_modules(next_page + 1, HELPABLE, "alexia")
             ),
             disable_web_page_preview=True,
         )
